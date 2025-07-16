@@ -29,9 +29,30 @@
 		9259A6FF2E2699DF003183C3 /* LocalNotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalNotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		92EC47152E27EFC30028E91C /* Exceptions for "LocalNotification" folder in "LocalNotificationTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Assets/custom-notification.caf",
+			);
+			target = 9259A6F42E2699DF003183C3 /* LocalNotificationTests */;
+		};
+		92EC47162E27EFC30028E91C /* Exceptions for "LocalNotification" folder in "LocalNotificationUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Assets/custom-notification.caf",
+			);
+			target = 9259A6FE2E2699DF003183C3 /* LocalNotificationUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9259A6E72E2699DD003183C3 /* LocalNotification */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				92EC47152E27EFC30028E91C /* Exceptions for "LocalNotification" folder in "LocalNotificationTests" target */,
+				92EC47162E27EFC30028E91C /* Exceptions for "LocalNotification" folder in "LocalNotificationUITests" target */,
+			);
 			path = LocalNotification;
 			sourceTree = "<group>";
 		};
