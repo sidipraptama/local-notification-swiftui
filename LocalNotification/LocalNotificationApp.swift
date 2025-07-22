@@ -20,7 +20,7 @@ struct LocalNotificationApp: App {
         WindowGroup {
             ContentView()
                 .onAppear {
-                    // Menghapus notif terjadwal hari ini (harusnya)
+                    // Menghapus notif terjadwal hari ini saja (harusnya)
                     UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["daily2130"])
                 }
         }
@@ -47,8 +47,8 @@ struct LocalNotificationApp: App {
         content.sound = UNNotificationSound(named: UNNotificationSoundName("custom-notification.caf")) // custom sound
 
         var dateComponents = DateComponents()
-        dateComponents.hour = 21
-        dateComponents.minute = 30
+        dateComponents.hour = 19
+        dateComponents.minute = 00
 
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
 
